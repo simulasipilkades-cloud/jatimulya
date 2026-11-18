@@ -9,7 +9,7 @@
         body { background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
         
         .app-container {
-            width: 100%; max-width: 900px; height: 100%; max-height: 700px;
+            width: 100%; max-width: 950px; height: 100%; max-height: 720px;
             background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             position: relative; overflow: hidden; display: flex; flex-direction: column;
         }
@@ -26,32 +26,32 @@
             justify-content: center; 
             align-items: center;
             flex-wrap: wrap; 
-            gap: 20px; 
-            margin-top: 20px; 
+            gap: 15px; 
+            margin-top: 15px; 
         }
         
         .kandidat-card { 
             background: #fff; border: 2px solid #eee; border-radius: 10px; padding: 15px; 
             cursor: pointer; transition: 0.2s; position: relative;
             display: flex; flex-direction: column; align-items: center; z-index: 10;
-            width: 180px;
+            width: 165px;
         }
         
         .kandidat-card:hover { border-color: #3498db; transform: translateY(-2px); }
         .kandidat-card.selected { border-color: #2980b9; background: #ebf5fb; }
         
         .foto-container {
-            position: relative; width: 100%; height: 150px; margin-bottom: 10px;
+            position: relative; width: 100%; height: 140px; margin-bottom: 10px;
             display: flex; justify-content: center;
         }
 
         .foto-kandidat { 
-            width: 120px; height: 150px; background-color: #ecf0f1; 
+            width: 110px; height: 140px; background-color: #ecf0f1; 
             border-radius: 8px; object-fit: cover; object-position: top;
         }
 
         .siluet {
-            width: 120px; height: 150px; background-color: #bdc3c7;
+            width: 110px; height: 140px; background-color: #bdc3c7;
             border-radius: 8px; display: flex; justify-content: center; align-items: flex-end; overflow: hidden;
         }
         
@@ -59,17 +59,17 @@
 
         .nomor-urut {
             position: absolute; top: -10px; background-color: #e74c3c; color: white;
-            font-weight: bold; font-size: 18px; width: 40px; height: 40px; border-radius: 50%;
+            font-weight: bold; font-size: 16px; width: 35px; height: 35px; border-radius: 50%;
             display: flex; justify-content: center; align-items: center;
             border: 3px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.3); z-index: 20;
         }
 
-        .nama-kandidat { font-weight: bold; font-size: 16px; color: #2c3e50; min-height: 24px; }
+        .nama-kandidat { font-weight: bold; font-size: 14px; color: #2c3e50; min-height: 36px; display: flex; align-items: center; justify-content: center; }
         
-        /* Tombol Pilih Kandidat Utama (Diubah menjadi Biru) */
+        /* Tombol Pilih Kandidat Utama */
         .btn-pilih { 
-            background: #2980b9; color: white; border: none; padding: 15px 30px; font-size: 20px; 
-            font-weight: bold; border-radius: 10px; cursor: pointer; width: 100%; max-width: 400px; margin: 20px auto 0 auto; display: block;
+            background: #2980b9; color: white; border: none; padding: 12px 25px; font-size: 18px; 
+            font-weight: bold; border-radius: 10px; cursor: pointer; width: 100%; max-width: 350px; margin: 15px auto 0 auto; display: block;
             box-shadow: 0 5px 15px rgba(41, 128, 185, 0.4); transition: 0.2s; position: relative; z-index: 10;
         }
         .btn-pilih:hover:not(:disabled) { background: #3498db; }
@@ -78,16 +78,16 @@
 
         /* Layar 2: Konfirmasi */
         .konfirmasi-box { 
-            background: #ecf0f1; padding: 20px; border-radius: 15px; margin-top: 20px; 
+            background: #ecf0f1; padding: 20px; border-radius: 15px; margin-top: 15px; 
             display: flex; flex-direction: column; align-items: center; position: relative; z-index: 10;
-            max-width: 400px; margin-left: auto; margin-right: auto;
+            max-width: 380px; margin-left: auto; margin-right: auto;
         }
-        .konfirmasi-box img { width: 150px; height: 180px; border-radius: 10px; border: 3px solid #2980b9; margin-bottom: 15px; object-fit: cover; object-position: top;}
-        .konfirmasi-box .siluet { width: 150px; height: 180px; border-radius: 10px; border: 3px solid #2980b9; margin-bottom: 15px; }
+        .konfirmasi-box img { width: 140px; height: 170px; border-radius: 10px; border: 3px solid #2980b9; margin-bottom: 15px; object-fit: cover; object-position: top;}
+        .konfirmasi-box .siluet { width: 140px; height: 170px; border-radius: 10px; border: 3px solid #2980b9; margin-bottom: 15px; }
         
-        .btn-group { display: flex; gap: 15px; margin-top: 20px; position: relative; z-index: 10; justify-content: center; }
-        .btn-batal { background: #e74c3c; color: white; border: none; padding: 15px; font-size: 18px; border-radius: 10px; width: 150px; cursor: pointer; }
-        .btn-lanjut { background: #2980b9; color: white; border: none; padding: 15px; font-size: 18px; border-radius: 10px; width: 150px; cursor: pointer; }
+        .btn-group { display: flex; gap: 15px; margin-top: 15px; position: relative; z-index: 10; justify-content: center; }
+        .btn-batal { background: #e74c3c; color: white; border: none; padding: 12px; font-size: 16px; border-radius: 10px; width: 140px; cursor: pointer; }
+        .btn-lanjut { background: #2980b9; color: white; border: none; padding: 12px; font-size: 16px; border-radius: 10px; width: 140px; cursor: pointer; }
 
         /* Layar 3: Sukses */
         #screen-sukses { display: none; flex-direction: column; justify-content: center; align-items: center; height: 100%; position: relative; overflow: hidden; cursor: pointer; }
@@ -101,10 +101,10 @@
             justify-content: center; 
             align-items: center;
             flex-wrap: wrap; 
-            gap: 20px; 
+            gap: 15px; 
             width: 100%; 
         }
-        .bg-blur-card { background: #fff; border: 2px solid #eee; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; align-items: center; width: 180px; }
+        .bg-blur-card { background: #fff; border: 2px solid #eee; border-radius: 10px; padding: 15px; display: flex; flex-direction: column; align-items: center; width: 165px; }
 
         .bg-blur-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; backdrop-filter: blur(8px); background: rgba(0, 0, 0, 0.4); z-index: 2; }
 
@@ -122,8 +122,8 @@
 
 <div class="app-container">
     <div class="header">
-        <h3>PILKADES DESA BINONG (SIMULASI)</h3>
-        <p>Kecamatan Binong, Kabupaten Subang - Tahun 2026</p>
+        <h3>PILKADES DESA JATIMULYA (SIMULASI)</h3>
+        <p>Kecamatan Compreng, Kabupaten Subang - Tahun 2026</p>
     </div>
 
     <!-- LAYAR 1: DAFTAR KANDIDAT -->
@@ -134,21 +134,39 @@
         <div class="kandidat-grid">
             
             <!-- Kandidat 1 -->
-            <div class="kandidat-card" onclick="pilihKandidat(1, 'CALON 01', 'image/03.jpg')">
+            <div class="kandidat-card" onclick="pilihKandidat(1, 'CALON 01', 'image/02.png')">
                 <div class="foto-container">
                     <div class="nomor-urut">1</div>
-                    <img src="image/03.jpg" class="foto-kandidat" alt="Foto Calon 01">
+                    <img src="image/02.png" class="foto-kandidat" alt="Foto Calon 01">
                 </div>
                 <div class="nama-kandidat">CALON 01</div>
             </div>
 
-            <!-- Kandidat 2 (Ruli) -->
-            <div class="kandidat-card" onclick="pilihKandidat(2, 'RULI WINIAR S.E', 'image/Ruli.jpeg')">
+            <!-- Kandidat 2 (Din Wahyudin) -->
+            <div class="kandidat-card" onclick="pilihKandidat(2, 'DIN WAHYUDIN', 'image/calon.jpeg')">
                 <div class="foto-container">
                     <div class="nomor-urut">2</div>
-                    <img src="image/Ruli.jpeg" class="foto-kandidat" alt="Foto Ruli">
+                    <img src="image/calon.jpeg" class="foto-kandidat" alt="Foto Din Wahyudin">
                 </div>
-                <div class="nama-kandidat">RULI WINIAR S.E</div>
+                <div class="nama-kandidat">DIN WAHYUDIN</div>
+            </div>
+
+            <!-- Kandidat 3 -->
+            <div class="kandidat-card" onclick="pilihKandidat(3, 'CALON 03', 'image/02.png')">
+                <div class="foto-container">
+                    <div class="nomor-urut">3</div>
+                    <img src="image/02.png" class="foto-kandidat" alt="Foto Calon 03">
+                </div>
+                <div class="nama-kandidat">CALON 03</div>
+            </div>
+
+            <!-- Kandidat 4 -->
+            <div class="kandidat-card" onclick="pilihKandidat(4, 'CALON 04', 'image/02.png')">
+                <div class="foto-container">
+                    <div class="nomor-urut">4</div>
+                    <img src="image/02.png" class="foto-kandidat" alt="Foto Calon 04">
+                </div>
+                <div class="nama-kandidat">CALON 04</div>
             </div>
 
         </div>
@@ -163,7 +181,7 @@
         
         <div class="konfirmasi-box">
             <div id="konfirmasi-foto-container"></div>
-            <h2 id="nama-konfirmasi" style="margin-top: 10px;">Nama Kandidat</h2>
+            <h2 id="nama-konfirmasi" style="margin-top: 5px;">Nama Kandidat</h2>
             <p id="nomor-konfirmasi">Calon Nomor Urut X</p>
         </div>
 
@@ -181,8 +199,10 @@
                 <h3>Silakan Pilih Calon Kepala Desa</h3>
             </div>
             <div class="bg-blur-grid">
-                <div class="bg-blur-card"><img src="image/03.jpg" class="foto-kandidat" alt="Calon 01 Blur"></div>
-                <div class="bg-blur-card"><img src="image/Ruli.jpeg" class="foto-kandidat" alt="Ruli Blur"></div>
+                <div class="bg-blur-card"><img src="image/02.png" class="foto-kandidat" alt="Calon 01 Blur"></div>
+                <div class="bg-blur-card"><img src="image/calon.jpeg" class="foto-kandidat" alt="Din Wahyudin Blur"></div>
+                <div class="bg-blur-card"><img src="image/02.png" class="foto-kandidat" alt="Calon 03 Blur"></div>
+                <div class="bg-blur-card"><img src="image/02.png" class="foto-kandidat" alt="Calon 04 Blur"></div>
             </div>
         </div>
 
@@ -200,20 +220,17 @@
 <script>
     let kandidatTerpilih = null;
 
-    // Fungsi memilih kandidat - Mengirimkan parameter path foto langsung
     function pilihKandidat(nomor, nama, fotoPath) {
         const cards = document.querySelectorAll('.kandidat-card');
         cards.forEach(card => card.classList.remove('selected'));
 
         event.currentTarget.classList.add('selected');
 
-        // Simpan data kandidat terpilih secara dinamis
         kandidatTerpilih = { nomor: nomor, nama: nama, foto: fotoPath };
 
         document.getElementById('btn-pilih-utama').disabled = false;
     }
 
-    // Fungsi Konfirmasi
     function tampilKonfirmasi() {
         if (!kandidatTerpilih) return;
 
